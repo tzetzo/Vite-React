@@ -3,15 +3,13 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
-function App() 
-{
-    const [count, setCount] = useState(0);
+function App() {
+  const [count, setCount] = useState(0);
 
   return (
     <>
       <div>
         {import.meta.env.VITE_API_URL}
-        <div>TZETZO</div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -19,7 +17,7 @@ function App()
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React + JavaScript</h1>
+      <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

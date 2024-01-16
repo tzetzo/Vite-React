@@ -7,8 +7,8 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
-    // You can also add a proxy to the development server. 
-    // This is useful if you are using an API that is running on a different domain or port or both. 
+    // You can also add a proxy to the development server.
+    // This is useful if you are using an API that is running on a different domain or port or both.
     // You can add a proxy to the development server so that you don't have to worry about CORS.
     // proxy: { // https://vitejs.dev/config/server-options.html#server-proxy
     //   '/api': {
@@ -16,6 +16,6 @@ export default defineConfig({
     //     changeOrigin: true,
     //     rewrite: (path) => path.replace(/^\/api/, ''),
     //   },
-    // } 
+    // }
   },
 });
