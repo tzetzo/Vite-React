@@ -7,21 +7,19 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-
+vitejs.dev
 In development, unlike Webpack, VITE is build on top of Esbuild which serves our files directly to the browser without bundling them;
-In production, VITE uses module bundler called Rollup which does minification etc.
+In production, VITE uses module bundler called Rollup which does minification
 
-
-Steps to create new Vite-React app (already done in this boilerplate):
-1. npm create vite@latest my-react-app
-    * choose React
-    * choose JavaScript or Typescript
+1. CMD to project folder --> npm create vite@latest my-react-app
+ * choose React
+ * choose JavaScript or Typescript
 
 2. npm install
 3. npm run dev
 
-4. create folder `/src/components` for your components
-5. to create env vars https://vitejs.dev/guide/env-and-mode.html#env-variables-and-modes
+4. create folder `/src/components`
+5. create env vars https://vitejs.dev/guide/env-and-mode.html#env-variables-and-modes
 	* create `.env` in root project folder
 	* VITE_API_URL=http://localhost:3000  // VITE_ is required!
 	* access it `import.meta.env.VITE_API_URL`  // not process.env.VITE_API_URL !!!
@@ -37,5 +35,11 @@ Steps to create new Vite-React app (already done in this boilerplate):
   		},
 	}
 
-7. The `public` folder is for static assets like images, fonts, and icons.
-8. `@types/react` and `@types/react-dom` provide `code hinting` without using TS.
+7. The `public` folder is for static assets like images, fonts, and icons
+8. `@types/react` and `@types/react-dom` provide `code hinting` without using TS
+
+9. deploy to Netlify https://vitejs.dev/guide/static-deploy.html#deploying-a-static-site
+	* CMD to project folder --> npm install -g netlify-cli
+	* ntl init
+	* ntl deploy (URL will be provided)
+	* now, every time we push our commits to github Netlify will auto deploy!
