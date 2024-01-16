@@ -12,7 +12,7 @@ In development, unlike Webpack, VITE is build on top of Esbuild which serves our
 In production, VITE uses module bundler called Rollup which does minification etc.
 
 
-Steps to create new Vite-React app:
+Steps to create new Vite-React app(already done in this boilerplate):
 1. npm create vite@latest my-react-app
     * choose React
     * choose JavaScript or Typescript
